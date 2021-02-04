@@ -2,6 +2,7 @@ body {
   max-width: 1500px;
   margin: 2.5em auto;
   vertical-align: middle;
+  background-color: cornsilk;
 }
 
 #title {
@@ -26,7 +27,6 @@ body {
 }
 
 .header {
-  border: 2px solid black;
   margin: 1rem;
 }
 
@@ -94,5 +94,10 @@ body {
   .portfolio-item {
     border: solid 1px black;
     flex-basis: 30%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
