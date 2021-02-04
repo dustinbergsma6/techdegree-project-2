@@ -1,21 +1,24 @@
 body {
   max-width: 1500px;
   margin: 2.5em auto;
-  vertical-align: middle;
-  background-color: cornsilk;
+  align-content: center;
+  background-color: whitesmoke;
+  font-family: Noto Sans;
 }
 
 #title {
   text-align: center;
 }
-
 .nav-list {
   list-style-type: none;
   margin: 1rem;
+  margin-left: 0;
 }
 
 .nav-item {
-  border: 1px solid black;
+  margin: 10px 0;
+  text-transform: uppercase;
+  background-color: white;
 }
 
 .nav-link {
@@ -30,21 +33,29 @@ body {
   margin: 1rem;
 }
 
-.header p {
-  text-align: center;
-}
-
 .header img {
   width: 100%;
 }
 
-.header-image {
-  width: 50%;
+.header p {
+  font-size: large;
+  text-align: center;
 }
 
 /* Portfolio Styles */
 .portfolio {
   margin: 1rem;
+  background-color: white;
+  padding-top: 15px;
+}
+
+.portfolio h2 {
+  text-align: center;
+}
+
+.portfolio-image {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 /* Default Display Phone Size */
@@ -58,9 +69,9 @@ body {
 .portfolio-item {
   background-color: #fff;
   border-radius: 0.2em;
-  border: solid 1px black;
   margin: 1rem 0;
   display: block;
+  text-align: center;
 }
 
 /* Media Query Tablet Size */
@@ -72,12 +83,41 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    columns: 2;
   }
 
   .portfolio-item {
-    border: solid 1px black;
     flex-basis: 47.5%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  .header p {
+    margin: 0 15px;
+    text-align: left;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    margin: 1rem;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+  }
+
+  .nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -92,12 +132,34 @@ body {
   }
 
   .portfolio-item {
-    border: solid 1px black;
     flex-basis: 30%;
   }
 
-  .header {
+  nav {
     display: flex;
-    flex-direction: row-reverse;
+  }
+
+  #title {
+    width: 40%;
+    display: inline-flex;
+  }
+  .nav-list {
+    list-style-type: none;
+    margin: 1rem;
+    width: 40%;
+    float: right;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    display: inline;
+  }
+
+  .nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
   }
 }
