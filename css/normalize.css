@@ -16,10 +16,6 @@ html {
  * Remove default margin.
  */
 
-body {
-  margin: 0;
-}
-
 /* HTML5 display definitions
    ========================================================================== */
 
@@ -35,12 +31,10 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 main,
 menu,
-nav,
 section,
 summary {
   display: block;

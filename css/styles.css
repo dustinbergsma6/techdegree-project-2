@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1500px;
-  margin: 2.5em auto;
+  margin: 0 auto;
+  padding: 0;
   align-content: center;
   background-color: whitesmoke;
   font-family: Noto Sans;
@@ -8,11 +13,11 @@ body {
 
 #title {
   text-align: center;
+  margin-left: 1rem;
 }
 .nav-list {
   list-style-type: none;
-  margin: 1rem;
-  margin-left: 0;
+  margin: 0;
 }
 
 .nav-item {
@@ -42,11 +47,53 @@ body {
   text-align: center;
 }
 
+#contact {
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  max-width: 500px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-nav-list {
+  list-style-type: none;
+  margin: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.bottom-nav-item {
+  margin: 10px 0;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.bottom-nav-link {
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+#bottom-title {
+  width: 40%;
+  display: inline-flex;
+  margin-left: 1rem;
+}
+
+hr {
+  margin: 1rem;
+}
+
 /* Portfolio Styles */
 .portfolio {
   margin: 1rem;
   background-color: white;
-  padding-top: 15px;
+  padding: 15px 15px 20px 15px;
 }
 
 .portfolio h2 {
@@ -72,6 +119,10 @@ body {
   margin: 1rem 0;
   display: block;
   text-align: center;
+}
+
+.full {
+  display: none;
 }
 
 /* Media Query Tablet Size */
@@ -102,7 +153,6 @@ body {
 
   .nav-list {
     list-style-type: none;
-    margin: 1rem;
     width: 100%;
     display: inline-flex;
     justify-content: center;
@@ -119,47 +169,107 @@ body {
     text-decoration: none;
     color: black;
   }
-}
 
-/* Media Query Desktop Size  */
+  .full {
+    display: inline-block;
+  }
 
-@media (min-width: 1024px) {
-  .portfolio-list {
-    margin: 0 auto;
+  .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bottom-nav-list {
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .portfolio-item {
-    flex-basis: 30%;
-  }
-
-  nav {
-    display: flex;
-  }
-
-  #title {
-    width: 40%;
+    width: 30%;
     display: inline-flex;
-  }
-  .nav-list {
-    list-style-type: none;
-    margin: 1rem;
-    width: 40%;
-    float: right;
+    justify-content: flex-end;
+    color: darkblue;
   }
 
-  .nav-item {
+  .bottom-nav-item {
+    display: inline-flex;
     margin: 10px 0;
     text-transform: uppercase;
     background-color: whitesmoke;
-    display: inline;
   }
 
-  .nav-link {
+  .bottom-nav-link {
     padding: 10px 15px;
     text-decoration: none;
     color: black;
+  }
+
+  #top {
+    display: none;
+  }
+
+  /* Media Query Desktop Size  */
+
+  @media (min-width: 1024px) {
+    .portfolio-list {
+      margin: 0 auto;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .portfolio-item {
+      flex-basis: 30%;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #title {
+      width: 40%;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .nav-list {
+      list-style-type: none;
+      width: 30%;
+      justify-content: flex-end;
+    }
+
+    .nav-item {
+      margin: 10px 0;
+      text-transform: uppercase;
+      background-color: whitesmoke;
+    }
+
+    .nav-link {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .bottom-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .bottom-nav-list {
+      list-style-type: none;
+      width: 30%;
+      justify-content: flex-end;
+    }
+
+    .bottom-nav-item {
+      margin: 10px 0;
+      text-transform: uppercase;
+      background-color: whitesmoke;
+    }
+
+    .bottom-nav-link {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: black;
+    }
   }
 }
