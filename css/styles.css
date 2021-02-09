@@ -127,7 +127,7 @@ hr {
 
 /* Media Query Tablet Size */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .portfolio-list {
     margin: 0 auto;
     list-style-type: none;
